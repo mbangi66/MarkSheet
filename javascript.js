@@ -28,15 +28,15 @@ function test(){
     };
 
     if(Percent>90)
-    {document.getElementById("G").innerHTML="A";}
+    {document.getElementById("G").innerHTML="O";}
     else if (Percent>80 && Percent<90)
-    {document.getElementById("G").innerHTML="B";}
+    {document.getElementById("G").innerHTML="A";}
     else if (Percent>70 && Percent<80)
-    {document.getElementById("G").innerHTML="C";}
+    {document.getElementById("G").innerHTML="B";}
     else if (Percent>60 && Percent<70)
-    {document.getElementById("G").innerHTML="D";}
+    {document.getElementById("G").innerHTML="C";}
     else if (Percent>=35 && Percent<60)
-        {document.getElementById("G").innerHTML="E";};
+        {document.getElementById("G").innerHTML="D";};
 
 
     var form = document.getElementById("myForm");
