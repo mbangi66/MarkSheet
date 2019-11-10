@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mark Sheet</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="card">
+            <div class="container">
+                    <form id="myForm">
+                        <table class="table" align="center">
+                            <thead><h1>Mark Sheet</h1></thead>
+                            <tr class="thead-dark">
+                                <th>Subjects</th>
+                                <th>Total Marks</th>
+                                <th>Obten Marks</th>
+                            </tr>
+                            <tr>
+                                <td>Modern Operating Environment</td>
+                                <td>100</td>
+                                <td><input class="form-control" id="MOE" type="number" value="" min="1" maxlength="2"></td>
+                            </tr>
+                            <tr>
+                                <td>Financial Accounting</td>
+                                <td>100</td>
+                                <td><input class="form-control" id="FA" type="number" value="" min="1" maxlength="2"></td>
+                            </tr>
+                            <tr>
+                                <td>Principles of Management</td>
+                                <td>100</td>
+                                <td><input class="form-control" id="POM" type="number" value="" min="1" maxlength="2"></td>
+                            </tr>
+                            <tr>
+                                <td>ComputerSkills</td>
+                                <td>100</td>
+                                <td><input class="form-control" id="CS" type="number" value="" min="1" maxlength="2"></td>
+                            </tr>
+                            <tr>
+                                <td>Business Communication</td>
+                                <td>100</td>
+                                <td><input class="form-control" id="BC" type="number" value="" min="1" maxlength="2"></td>
+                            </tr>
+                            <tr>
+                                <td>Laboratory Course - Tally / MS Office</td>
+                                <td>100</td>
+                                <td><input class="form-control" id="LC" type="number" value=""  min="1" maxlength="2"></td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics I</td>
+                                <td>100</td>
+                                <td><input class="form-control" id="MI" type="number" value="" min="1" maxlength="2"></td>
+                            </tr> 
+                        </table>
+                    </div>
+                    <div style="text-align:center; justify-content: space-between;;" id="btn">
+                        <button class="btn btn-primary" onClick="reset()" id="myForm" type="reset" >Reset</button>
+                        <button class="btn btn-secondary" onclick="test()">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card" >
+            <div class="container">
+                <table class="table" align="center" id="mark">
+                    <tr class="thead-dark">
+                       <th>Marks</th>
+                       <th>Garde</th>                          
+                       <th>Percentage</th>
+                       <th>Result</th>
+                    </tr>
+                    <tr>
+                       <td>700</td>
+                       <td>A</td>
+                       <td>100%</td>
+                       <td>Pass</td>
+                    </tr>
+                    <tr class="table-active">
+                       <td><p id="marks"></p></td>
+                       <td><p id="G"></p></td>
+                       <td><p id="PC"></p></td>
+                       <td><p id="RS"></p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+</html>
